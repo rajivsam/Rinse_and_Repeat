@@ -3,4 +3,6 @@ pandas
 jupyter
 ipython
 h5py
-dask
+dask[complete]
+woodwork
+
