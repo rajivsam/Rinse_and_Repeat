@@ -1,0 +1,6 @@
+boxsdk
+pandas
+jupyter
+ipython
+h5py
+dask

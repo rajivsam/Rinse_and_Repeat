@@ -36,3 +36,13 @@ box_integration/
 planning/
 # log files
 **/*.log
+# all zip files
+**/*.zip
+# all data files
+**/*.csv
+data/
+## all config files
+src/config/
+## ignore all pandas based notebooks
+**/notebooks/ITSM/pandas*
+**/notebooks/Retail/pandas*
