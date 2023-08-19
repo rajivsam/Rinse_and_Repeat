@@ -5,4 +5,7 @@ ipython
 h5py
 dask[complete]
 woodwork
-
+tables
+lxml
+html5lib
+plotly

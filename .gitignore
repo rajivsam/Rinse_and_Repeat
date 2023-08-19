@@ -43,6 +43,7 @@ planning/
 data/
 ## all config files
 src/config/
-## ignore all pandas based notebooks
+## ignore all pandas based notebooks and notebooks begining with experiment
 **/notebooks/ITSM/pandas*
 **/notebooks/Retail/pandas*
+**/notebooks/Retail/experiment*
