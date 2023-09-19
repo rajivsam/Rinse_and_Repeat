@@ -43,4 +43,4 @@ planning/
 **/notebooks/Retail/pandas*
 **/notebooks/Retail/experiment*
 # ignore vs-code code-workspace files
-**.code-workspace
+Rinse_and_Repeat.code-workspace
