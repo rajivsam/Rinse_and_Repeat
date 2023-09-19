@@ -1,6 +1,6 @@
 ## Rinse and Repeat Data Science
 <p align="center">
-<img src="docs/rinse_and_repeat_documentation/assets/images/logonav_resized.png"/>
+<img src="rinse_and_repeat_documentation/assets/images/logonav_resized.png"/>
 </p>
 
 
