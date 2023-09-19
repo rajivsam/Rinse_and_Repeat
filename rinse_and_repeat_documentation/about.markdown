@@ -38,7 +38,7 @@ Once we have decided on a set of candidate data assets for your use case, I woul
 
 
 
-  When we agree on refining and getting a detailed evaluation of the solutions relevant to your use case, I can begin the modeling phase. The details of this phase really depend on whether you have an analytic use case or a machine learning use case. An analytic use case typically performs a computation on <em> all of the data</em>. Computation on <em> all of the data </em> can require the use of a cluster. Sometimes, computation on <em> all of the data </em> is not possible and will require the use of <em> approximation techniques </em>. Typically, there is no <em> learning </em> component in an analytic use case. If you have a machine learning use case, the style of learning you want to adopt, <a href="https://www.baeldung.com/cs/online-vs-offline-learning"><em> offline </em> or <em> batch </em> machine learning</a>, is an important decision. When to redeploy a model and the kind of learning style that you want to adopt is a decision that is driven by business conditions, your budget, and lead times in your organization for model deployment. If this is your first deployment, an offline model is a reasonable model to begin with.
+  When we agree on refining and getting a detailed evaluation of the solutions relevant to your use case, I can begin the modeling phase. The details of this phase really depend on whether you have an analytic use case or a machine learning use case. An analytic use case typically performs a computation on <em> all of the data</em>. Computation on <em> all of the data </em> can require the use of a cluster. Sometimes, computation on <em> all of the data </em> is not possible and will require the use of <em> approximation techniques </em>. Typically, there is no <em> learning </em> component in an analytic use case. If you have a machine learning use case, the style of learning you want to adopt, <a href="https://www.baeldung.com/cs/online-vs-offline-learning"><em> offline </em> or <em> batch </em> machine learning</a>, is an important decision. When to redeploy a model and the kind of learning style that you want to adopt is a decision that is driven by business conditions, your budget, and lead times in your organization for model deployment. If this is your first deployment, an offline model is a reasonable model to begin with. 
    {: style="text-align: justify"}
 
 
@@ -75,7 +75,7 @@ Task Solution Description
 
 An algorithm (for the purposes of this description) has an analogous definition to a recipe except that the specification of an algorithm is in terms of a computational context. It is meant to abstract the details of computation as opposed to a task that is either a part of a use case, or,  a use case by itself. The details of the specification are analogous to a task specification.
 
-Please read the recipes section of this documentation to see how the above idea is implemented for an analytic recipe and for a machine-learning algorithm.
+Please read the recipes section of this documentation to see how the above idea is implemented for an analytic recipe and for a machine-learning algorithm. A modeling solution I discuss with you would be described in terms of recipes and algorithms. The discussion of your problem with you will help me understand what recipes and algorithms are a good fit for your use case.
 {: style="text-align: justify"}
 
 
