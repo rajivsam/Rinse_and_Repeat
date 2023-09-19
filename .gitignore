@@ -42,3 +42,5 @@ planning/
 **/notebooks/ITSM/pandas*
 **/notebooks/Retail/pandas*
 **/notebooks/Retail/experiment*
+# ignore vs-code code-workspace files
+**.code-workspace
