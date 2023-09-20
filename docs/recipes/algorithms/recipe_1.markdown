@@ -34,7 +34,7 @@ The repository contains a [retail dataset](https://archive.ics.uci.edu/dataset/5
 {:refdef: style="text-align: center;"}
 ![Biclusters on Shopping Days of Q1 2010](../../assets/images/biclusters_algorithmic_description.png){:width="auto"}
 {: refdef}
-These biclusters suggest that the shopping activity for the quarter can be summarized by two clusters of business days with each cluster being dominated by the shopping activities for the products listed. As with the task recipe, the implementation for the example follows the template discussed in the overview section. For the details of the algorithm and its relationship with tasks such as Singular Value Decomposition (SVD) and Principal Components Analysis (PCA), see [this video](https://www.youtube.com/watch?v=mnDC6hWWbwY&t=311s)
+These biclusters summarize the shopping activity for the store for Q1. In other words, they can viewed as a _Q1 shopping activity signature_. As with the task recipe, the implementation for the example follows the template discussed in the overview section. For the details of the algorithm and its relationship with tasks such as Singular Value Decomposition (SVD) and Principal Components Analysis (PCA), see [this video](https://www.youtube.com/watch?v=mnDC6hWWbwY&t=311s)
 {: style="text-align: justify"} 
 
 
