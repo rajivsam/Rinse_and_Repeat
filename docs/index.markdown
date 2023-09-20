@@ -9,7 +9,7 @@ nav_order: 1
 ![rinse and repeat logo](assets/images/logonav_resized.png)
 {: refdef}
 
-_Done correctly_ data science solutions developed for enterprise applications can have a _rinse and repeat_ nature. The _rinse and repeat_ phrase implies that the solution recipe to develop the next version of the solution, for example for the next business time period, is going to be similar. The challenge lies in getting to a version of a solution that has this _rinse and repeat_ nature. The fact that getting that first model out is very challenging is consistent with results from surveys such as this from <a href="https://www.kdnuggets.com/2022/01/models-rarely-deployed-industrywide-failure-machine-learning-leadership.html"> kd-nuggets</a>.
+_Done correctly_ , data science solutions developed for enterprise applications can have a _rinse and repeat_ nature. The _rinse and repeat_ phrase implies that the solution recipe to develop the next version of the solution, for example for the next business time period, is going to be similar. The challenge lies in getting to a version of a solution that has this _rinse and repeat_ nature. The fact that getting that first model out is very challenging is consistent with results from surveys such as this from <a href="https://www.kdnuggets.com/2022/01/models-rarely-deployed-industrywide-failure-machine-learning-leadership.html"> kd-nuggets</a>.
 {: style="text-align: justify"} 
 Understanding the following:
 * the outcomes you desire,
