@@ -33,7 +33,7 @@ math: katex
 
 
 # Build settings
-theme: just-the-docs
+theme: jekyll-theme-just-the-docs
 plugins:
   - jekyll-feed
   - jekyll-katex
