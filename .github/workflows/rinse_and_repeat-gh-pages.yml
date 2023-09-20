@@ -5,6 +5,8 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+  paths:
+      - "docs/**"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,6 +39,8 @@ jobs:
           destination: ./docs/_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+        with:
+          path: "docs/_site/"
 
   # Deployment job
   deploy:
