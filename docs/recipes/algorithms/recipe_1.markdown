@@ -5,7 +5,7 @@ parent: Algorithms
 katex: true
 ---
 ## Algorithm Description
-Clustering is a common data analysis technique applied to understanding the data associated with a problem. In a clustering solution, the same attributes are associated with every row of the dataset. In other words, each row is expressed or explained by all the attributes (columns). In contrast, a biclustering solution expresses associations between a group of rows and a group of columns. The group of rows, called a _blcluster_ is associated with a _subset_ of the columns as opposed to _all_ the columns.
+Clustering is a common data analysis technique applied to understanding the data associated with a problem. In a clustering solution, the same attributes are associated with every row of the dataset. In other words, each row is expressed or explained by all the attributes (columns). In contrast, a biclustering solution expresses associations between a _subset_ of the rows and a _subset_ of the columns.
 {: style="text-align: justify"} 
 ### Examples
 Biclustering usually finds application with high dimensional datasets such as those found in:
