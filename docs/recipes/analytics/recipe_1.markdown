@@ -27,7 +27,7 @@ The key elements associated with a data description for this recipe include:
 
 
 ## Task Solution Description
-See the ITSM example in the [repository](https://github.com/rajivsam/Rinse_and_Repeat/tree/main/notebooks/ITSM), for example, the implementation of this recipe for a reference implementation for this recipe. This implementation follows the template discussed in the <a href="{{ '/Rinse_and_Repeat/about/' }}">overview </a> section. Specifically:
+See the ITSM example in the [repository](https://github.com/rajivsam/Rinse_and_Repeat/tree/main/notebooks/ITSM), for a reference implementation of this recipe. This implementation follows the template discussed in the <a href="{{ '/Rinse_and_Repeat/about/' }}">overview </a> section. Specifically:
 * The attributes that are relevant to the use case are first defined.
 
 * Inadmissible values for the attributes are defined first and processed next. In this implementation, inadmissible values are removed (processing choice), but this can depend on the noise type and a different processing choice can be made. For example, if an attribute is missing, an imputation for the missing value can be made.
