@@ -9,3 +9,4 @@ jupyterlab
 jupyter-packaging
 nanopub
 rdflib
+pandera
