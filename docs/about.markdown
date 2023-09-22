@@ -111,7 +111,7 @@ In both these cases, you revisit the modeling phase make adjustments, and then r
 
 [^1]: Our discussion of the data requirements of the task is an estimated set of attributes, the exact set will be determined during implementation.
 
-[^2]: [Great Expectations](https://greatexpectations.io/) is an example of a data quality tool. Integration with such a tool is not yet done in the recipes but should happen in the near future.
+[^2]: [pandera](https://union.ai/pandera) is an example of a data quality tool. See the [repository](https://github.com/rajivsam/Rinse_and_Repeat/tree/main/notebooks/Retail) for an example of data quality rules are developed and applied to a real world dataset.
 
 [^3]: Of course, it is possible that your entire use case is the development of a *data product*. 
   
