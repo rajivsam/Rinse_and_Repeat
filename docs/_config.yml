@@ -40,7 +40,9 @@ plugins:
   - jekyll-feed
   - jekyll-katex
   - jekyll-scholar
-  
+
+gems: ['jekyll/scholar']
+
 scholar:
   style: apa
   locale: en
