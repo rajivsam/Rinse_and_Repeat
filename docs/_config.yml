@@ -41,8 +41,6 @@ plugins:
   - jekyll-katex
   - jekyll-scholar
 
-
-
 scholar:
   style: apa
   locale: en
