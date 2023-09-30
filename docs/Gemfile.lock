@@ -101,7 +101,7 @@ PLATFORMS
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.2)
-  jekyll-feed (~> 0.12)
+  jekyll-feed
   jekyll-katex
   jekyll-scholar
   just-the-docs (~> 0.6.1)
