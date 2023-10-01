@@ -15,14 +15,10 @@ gem 'just-the-docs', '~> 0.6.1'
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-    gem 'jekyll-archives'
-    gem 'jekyll-email-protect'
     gem 'jekyll-feed'
     gem 'jekyll-github-metadata'
     gem 'jekyll-scholar'
     gem 'jekyll-sitemap'
-    gem 'jekyll-target-blank'
-    gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'unicode_utils'
 end
