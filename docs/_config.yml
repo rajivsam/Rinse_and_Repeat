@@ -39,7 +39,8 @@ remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
   - jekyll-katex
-  - jekyll-scholar
+  - jekyll/scholar
+  -jekyll-scholar
 
 scholar:
   style: apa
