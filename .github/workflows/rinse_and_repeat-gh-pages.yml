@@ -1,30 +1,50 @@
-name: jekyll-cd
+name: deploy_rinse_and_repeat
 
 on:
   push:
     branches:
       - master
+      - main
+  pull_request:
+    branches:
+      - master
+      - main
 
 jobs:
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
-    env:
-       working-directory: ./docs
-
     steps:
-      - name: 🛎 Check out master
-        uses: actions/checkout@master
-        with:
-          fetch-depth: 1
-      - name: 🎩 Install Jekyll
-        run: |
-          sudo gem install bundler jekyll
-          sudo bundle install .
-      - name: 🧪 Deploy build
-        run: |
-          git config user.name "${GITHUB_ACTOR}"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git add .
-          git commit -am "🧪 Deploy with ${GITHUB_WORKFLOW}"
-          git push --all -f https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0.2'
+    - name: Enable bundler cache
+      uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+    - name: Install deps
+      run: |
+        gem install bundler
+        bundle config path vendor/bundle
+        bundle install --jobs 4 --retry 3
+    - name: Setup deploy options
+      id: setup
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [[ ${GITHUB_REF} = refs/pull/*/merge ]]; then # pull request
+          echo "::set-output name=SRC_BRANCH::${GITHUB_HEAD_REF}"
+          echo "::set-output name=NO_PUSH::--no-push"
+        elif [[ ${GITHUB_REF} = refs/heads/* ]]; then # branch, e.g. master, source etc
+          echo "::set-output name=SRC_BRANCH::${GITHUB_REF#refs/heads/}"
+        fi
+        echo "::set-output name=DEPLOY_BRANCH::gh-pages"
+    - name: Deploy website
+      run:  yes | bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }}
+                    --src ${{ steps.setup.outputs.SRC_BRANCH }}
+                    --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }}
