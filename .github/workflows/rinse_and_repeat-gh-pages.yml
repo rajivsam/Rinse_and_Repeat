@@ -10,9 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/upload-artifact@v3
-      with:
-        name: 'github-pages'
-        path: docs/_site
+        with:
+          name: 'github-pages'
+          path: docs/_site
 
 
     
